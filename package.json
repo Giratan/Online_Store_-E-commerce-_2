@@ -1,0 +1,11 @@
+{
+  "name": "online-store",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Примитивный интернет-магазин на Node.js и vanilla JavaScript",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  }
+}

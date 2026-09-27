@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Простой магазин</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="site-header">
+        <a class="brand" href="/">Лавка</a>
+        <span class="cart" aria-label="Количество товаров в корзине">Корзина: <strong id="cart-count">0</strong></span>
+      </header>
+
+      <section class="intro">
+        <p class="eyebrow">Небольшой интернет-магазин</p>
+        <h1>Вещи, которые хочется оставить.</h1>
+        <p>Добавляйте понравившиеся вещи в корзину. Она сохранится локально в браузере.</p>
+      </section>
+
+      <section>
+        <div class="section-heading">
+          <h2>Товары</h2>
+          <span id="product-status">Загрузка...</span>
+        </div>
+        <div class="products" id="products"></div>
+      </section>
+
+      <section class="new-product-section">
+        <div class="section-heading">
+          <h2>Добавить товар</h2>
+          <span id="product-form-status"></span>
+        </div>
+        <form class="product-form" id="product-form">
+          <label>
+            Название
+            <input name="name" type="text" placeholder="Например, Свитшот" required />
+          </label>
+          <label>
+            Категория
+            <input name="category" type="text" placeholder="Одежда" required />
+          </label>
+          <label>
+            Цена
+            <input name="price" type="number" min="1" step="1" placeholder="2500" required />
+          </label>
+          <button type="submit">Сохранить товар</button>
+        </form>
+      </section>
+
+      <section class="cart-section">
+        <div class="section-heading">
+          <h2>Ваша корзина</h2>
+          <strong id="cart-total">0 ₽</strong>
+        </div>
+        <div class="cart-items" id="cart-items"></div>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
