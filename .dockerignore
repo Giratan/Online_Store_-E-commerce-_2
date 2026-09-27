@@ -2,3 +2,4 @@ README.md
 .dcdignore
 node_modules
 .git
+Dockerfile
